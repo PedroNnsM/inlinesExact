@@ -1,241 +1,237 @@
-<style>
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-  }
-
-  .calendar {
-    display: flex;
-  }
-
-  .calendar-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .calendar-list li {
-    margin: 5px;
-    border: 1px solid black;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .calendar-list li a {
-    display: block;
-    text-decoration: none;
-    color: black;
-  }
-
-  .day {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-
-  .event-info {
-    text-align: center;
-  }
-
-  .event-date {
-    font-size: 12px;
-  }
-
-  .event-speaker {
-    font-size: 14px;
-    font-weight: bold;
-  }
-</style>
 <!DOCTYPE html>
 <html>
   <head>
     <title>Calendário</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        max-width: 800px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        border: 1px solid gray;
+      }
+
+      th {
+        background-color: lightgray;
+        font-weight: bold;
+      }
+
+      td {
+        position: relative;
+      }
+      td.none {
+        opacity: 0.5;
+        background-color: #c5c5c5;
+      }
+
+      .day-link {
+        display: flex;
+        justify-content: start;
+        align-self: start;
+        align-items: start;
+        text-decoration: none;
+        color: black;
+      }
+
+      .day-content {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        display: none;
+        z-index: 10;
+      }
+      .day-link-content {
+        width: 100%;
+      }
+
+      .day-link-content > h3 {
+        text-align: end;
+      }
+      td.none .day-link-content > p {
+        opacity: 0;
+      }
+    
+
+      td a:hover .day-content {
+        display: block;
+      }
+      td.none:hover .day-content {
+        display: none;
+      }
+      td.none:hover a {
+        cursor: default;
+      }
+
+      .week-number {
+        font-weight: bold;
+        text-align: center;
+        background-color: lightgray;
+      }
+    </style>
   </head>
   <body>
-    <div class="calendar">
-      <ul class="calendar-list">
-        <li>
-          <a href="https://www.example.com" target="_blank">
-            <div class="day">1</div>
-            <div class="event-info">
-              <span class="event-date">1 de junho</span>
-              <span class="event-speaker">Palestrante 1</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.example.com" target="_blank">
-            <div class="day">1</div>
-            <div class="event-info">
-              <span class="event-date">1 de junho</span>
-              <span class="event-speaker">Palestrante 1</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.example.com" target="_blank">
-            <div class="day">2</div>
-            <div class="event-info">
-              <span class="event-date">1 de junho</span>
-              <span class="event-speaker">Palestrante 1</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.example.com" target="_blank">
-            <div class="day">3</div>
-            <div class="event-info">
-              <span class="event-date">3 de junho</span>
-              <span class="event-speaker">Palestrante 1</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.example.com" target="_blank">
-            <div class="day">4</div>
-            <div class="event-info">
-              <span class="event-date">4 de junho</span>
-              <span class="event-speaker">Palestrante 4</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.example.com" target="_blank">
-            <div class="day">5</div>
-            <div class="event-info">
-              <span class="event-date">5 de junho</span>
-              <span class="event-speaker">Palestrante 5</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.example.com" target="_blank">
-            <div class="day">6</div>
-            <div class="event-info">
-              <span class="event-date">6 de junho</span>
-              <span class="event-speaker">Palestrante 6</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.example.com" target="_blank">
-            <div class="day">1</div>
-            <div class="event-info">
-              <span class="event-date">1 de junho</span>
-              <span class="event-speaker">Palestrante 1</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.example.com" target="_blank">
-            <div class="day">1</div>
-            <div class="event-info">
-              <span class="event-date">1 de junho</span>
-              <span class="event-speaker">Palestrante 1</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.example.com" target="_blank">
-            <div class="day">1</div>
-            <div class="event-info">
-              <span class="event-date">1 de junho</span>
-              <span class="event-speaker">Palestrante 1</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.example.com" target="_blank">
-            <div class="day">1</div>
-            <div class="event-info">
-              <span class="event-date">1 de junho</span>
-              <span class="event-speaker">Palestrante 1</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.example.com" target="_blank">
-            <div class="day">1</div>
-            <div class="event-info">
-              <span class="event-date">1 de junho</span>
-              <span class="event-speaker">Palestrante 1</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.example.com" target="_blank">
-            <div class="day">1</div>
-            <div class="event-info">
-              <span class="event-date">1 de junho</span>
-              <span class="event-speaker">Palestrante 1</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.example.com" target="_blank">
-            <div class="day">1</div>
-            <div class="event-info">
-              <span class="event-date">1 de junho</span>
-              <span class="event-speaker">Palestrante 1</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.example.com" target="_blank">
-            <div class="day">1</div>
-            <div class="event-info">
-              <span class="event-date">1 de junho</span>
-              <span class="event-speaker">Palestrante 1</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.example.com" target="_blank">
-            <div class="day">1</div>
-            <div class="event-info">
-              <span class="event-date">1 de junho</span>
-              <span class="event-speaker">Palestrante 1</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.example.com" target="_blank">
-            <div class="day">1</div>
-            <div class="event-info">
-              <span class="event-date">1 de junho</span>
-              <span class="event-speaker">Palestrante 1</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.example.com" target="_blank">
-            <div class="day">1</div>
-            <div class="event-info">
-              <span class="event-date">1 de junho</span>
-              <span class="event-speaker">Palestrante 1</span>
-            </div>
-          </a>
-        </li>
-        <!-- Adicione os outros dias do mês aqui -->
-        <li>
-          <a href="https://www.example.com" target="_blank">
-            <div class="day">30</div>
-            <div class="event-info">
-              <span class="event-date">30 de junho</span>
-              <span class="event-speaker">Palestrante 30</span>
-            </div>
-          </a>
-        </li>
-      </ul>
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>Semana</th>
+            <th>Segunda-feira</th>
+            <th>Terça-feira</th>
+            <th>Quarta-feira</th>
+            <th>Quinta-feira</th>
+            <th>Sexta-feira</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Semana 1 -->
+          <tr>
+            <td class="week-number" rowspan="1">Semana 1</td>
+            <td data-week="1" class="none">
+              <a class="day-link" href="#">
+                <div class="day-link-content">
+                  <h3>30</h3>
+                  <p >.</p>
+                </div>
+                <div class="day-content">
+                  <h3>Título do Dia 1</h3>
+                  <p>Conteúdo do Dia 1</p>
+                </div>
+              </a>
+            </td>
+            <td data-week="1" class="none">
+              <a class="day-link" href="#">
+                <div class="day-link-content">
+                  <h3>31</h3>
+                  <p>.</p>
+                </div>
+                <div class="day-content">
+                  <h3>Título do Dia 2</h3>
+                  <p>Conteúdo do Dia 2</p>
+                </div>
+              </a>
+            </td>
+            <td data-week="1">
+              <a class="day-link" href="#">
+                <div class="day-link-content">
+                  <h3>01</h3>
+                  <p>Roleplay</p>
+                </div>
+                <div class="day-content">
+                  <h3>Roleplay</h3>
+                  <p>Thayane</p>
+                </div>
+              </a>
+            </td>
+            <td data-week="1">
+              <a class="day-link" href="#">
+                <div class="day-link-content">
+                  <h3>02</h3>
+                  <p>Mentoria pv</p>
+                </div>
+                <div class="day-content">
+                  <h3>Mentoria pv</h3>
+                  <p>Theo Orosco</p>
+                </div>
+              </a>
+            </td>
+            <td data-week="1">
+              <a class="day-link" href="#">
+                <div class="day-link-content">
+                  <h3>03</h3>
+                  <p>.</p>
+                </div>
+                
+              </a>
+            </td>
+            <!-- ... adicione as outras células para os dias da semana -->
+          </tr>
+          <tr>
+            <td class="week-number" rowspan="1">Semana 2</td>
+            <td data-week="1" class="">
+              <a class="day-link" href="#">
+                <div class="day-link-content">
+                  <h3>05</h3>
+                  <p >Treinamento</p>
+                </div>
+                <div class="day-content">
+                  <h3>Cadencia de emails</h3>
+                  <p>Thayane andrade</p>
+                </div>
+              </a>
+            </td>
+            <td data-week="1" class="">
+              <a class="day-link" href="#">
+                <div class="day-link-content">
+                  <h3>07</h3>
+                  <p>Workshop GR</p>
+                </div>
+                <div class="day-content">
+                  <h3>Workshop para gerente</h3>
+                  <p>theo orosco</p>
+                </div>
+              </a>
+            </td>
+            <td data-week="1">
+              <a class="day-link" href="#">
+                <div class="day-link-content">
+                  <h3>08</h3>
+                  <p>Roleplay</p>
+                </div>
+                <div class="day-content">
+                  <h3>Roleplay</h3>
+                  <p>Thayane</p>
+                </div>
+              </a>
+            </td>
+            <td data-week="1">
+              <a class="day-link" href="#">
+                <div class="day-link-content">
+                  <h3>09</h3>
+                  <p>Mentoria pv</p>
+                </div>
+                <div class="day-content">
+                  <h3>Mentoria pv</h3>
+                  <p>Theo Orosco</p>
+                </div>
+              </a>
+            </td>
+            <td data-week="1">
+              <a class="day-link" href="#">
+                <div class="day-link-content">
+                  <h3>10</h3>
+                  <p>.</p>
+                </div>
+                
+              </a>
+            </td>
+            <!-- ... adicione as outras células para os dias da semana -->
+          </tr>
+          <!-- Semana 2 -->
+
+          <!-- ... adicione as outras semanas -->
+        </tbody>
+      </table>
     </div>
   </body>
 </html>

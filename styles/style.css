@@ -8,16 +8,6 @@
   }
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
 .inmplayer-popover {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
@@ -34,9 +24,7 @@
   border-radius: 8px;
 }
 
-.inmplayer-popover-inner-content {
-  border-radius: 8px;
-}
+
 
 .inmplayer-popover-close-button {
   font-size: x-large;
@@ -72,30 +60,6 @@
   border-radius: 0.25em;
 }
 
-.inmplayer-button2 {
-  width: auto;
-  overflow: hidden;
-  padding: 5px 30px 5px 30px;
-  box-shadow: 3px 3px 3px #888888;
-  border-radius: 0.25em;
-  text-shadow: 0px 0px 0px #222222;
-  background-color: #ef8059 !important;
-  color: #ffffff;
-  cursor: pointer;
-  width: auto !important;
-}
-
-.inmplayer-button3 {
-  width: auto;
-  overflow: hidden;
-  padding: 5px 30px 5px 30px;
-  box-shadow: 3px 3px 3px #888888;
-  border-radius: 0.25em;
-  text-shadow: 0px 0px 0px #222222;
-  background-color: #5cb85c !important;
-  color: #ffffff;
-  cursor: pointer;
-}
 
 .inmplayer-popover-button-end {
   float: right;
@@ -201,70 +165,7 @@
   text-align: right;
 }
 
-.inmplayer-button22 {
-  width: auto;
-  overflow: hidden;
-  padding: 5px 30px 5px 30px;
-  box-shadow: 3px 3px 3px #888888;
-  border-radius: 0.25em;
-  text-shadow: 0px 0px 0px #222222;
-  background-color: #993399 !important;
-  color: #000000;
-  cursor: pointer;
-  width: auto !important;
-}
 
-.BOTAOAGENDA {
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  height: 44px;
-  line-height: 44px;
-  color: #000000;
-  font-family: Brush Script MT;
-  width: 180px;
-  font-size: 27px;
-  font-weight: 100;
-  padding: 56px;
-  background-color: transparent;
-  background-image: url("https://i.ibb.co/FBwtf4J/DADOS-DA-CONTA.png");
-  -webkit-box-shadow: -1px 0 20px 0 #000000;
-  -moz-box-shadow: -1px 0 20px 0 #000000;
-  box-shadow: -1px 0 20px 0 #000000;
-  text-shadow: 1px 1px 35px #000000;
-  border: solid #ffae00 1px;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  text-align: center;
-}
-
-.inmplayer-button33 {
-  width: auto;
-  overflow: hidden;
-  text-align: center;
-  padding: 15px 30px 15px 30px;
-  box-shadow: 3px 3px 3px #888888;
-  border-radius: 0.25em;
-  text-shadow: 0px 0px 0px #222222;
-  background-color: #d3d3d3 !important;
-  color: #000000;
-  cursor: pointer;
-}
-
-.inmplayer-button333 {
-  width: 70px;
-  overflow: hidden;
-  text-align: center;
-  padding: 15px 30px 15px 30px;
-  box-shadow: 3px 3px 3px #888888;
-  border-radius: 0.25em;
-  text-shadow: 0px 0px 0px #222222;
-  color: transparent;
-  background-color: transparent;
-  background-image: url("https://live.staticflickr.com/65535/52231389651_bf188e41d9_w.jpg");
-  cursor: pointer;
-}
 
 /*---------------------- MENU LATERAL----------------------------*/
 
@@ -287,105 +188,6 @@
   color: rgba(0, 0, 0, 0.54);
 }
 
-/* Rectangle 41 */
-
-.retangulo1 {
-  position: absolute;
-  width: 630px;
-  height: 1px;
-  left: 0px;
-  top: 75px;
-
-  /* Grey */
-
-  background: #d3d6da;
-}
-
-/* Rectangulo em baixo do inicio */
-
-.retanguloinicio {
-  overflow: auto;
-  position: absolute;
-  width: 30px;
-  height: 4px;
-  left: 15px;
-  top: 49px;
-
-  /* Orange */
-
-  background: #f5845e;
-}
-
-/* Rectangle 45 */
-
-.rectangle45 {
-  overflow: auto;
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  top: 100px;
-  bottom: 0px;
-
-  /* Light Grey */
-
-  background: #f2f2f2;
-}
-
-/* Vídeo Box */
-
-.videobox {
-  border-radius: 10px;
-}
-
-/* Texto em baixo do vídeo */
-
-.texto01 {
-  text-align: justify;
-  font-family: Roboto;
-}
-
-.myButton {
-  box-shadow: inset 1px 1px 1px 1px #ff5e00;
-  background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
-  width: 350px;
-  height: 50px;
-  background-color: #ffffff;
-  border-radius: 6px;
-  border: 1px solid #dcdcdc;
-  display: inline-block;
-  cursor: pointer;
-  color: #666666;
-  font-family: Roboto;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 10px 100px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #ffffff;
-}
-
-.myButton:hover {
-  background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
-  background-color: #f6f6f6;
-}
-
-.myButton:active {
-  position: relative;
-  top: 1px;
-}
-
-.myButton02 {
-  margin-top: 2vw;
-  background-color: #daa521;
-  border: none;
-  width: 15vw;
-  height: 3vw;
-  font-size: 1.5vw;
-  color: #ffffff;
-  border-radius: 0.5vw;
-  font-weight: bold;
-  cursor: pointer;
-}
-
 .botaoconfigurespotter {
   width: auto;
   overflow: hidden;
@@ -395,39 +197,6 @@
   text-shadow: 0px 0px 0px #222222;
   background-color: #ffffff !important;
   color: #000000;
-  cursor: pointer;
-}
-
-.botaomenu2 {
-  width: auto;
-  overflow: hidden;
-  padding: 5px 20px 5px 20px;
-  box-shadow: 10px 10px 10px #888888;
-  border-radius: 0.25em;
-  text-shadow: 0px 0px 0px #222222;
-  background-color: #ef8059 !important;
-  color: #ffffff;
-  cursor: pointer;
-  width: auto !important;
-  text-align: center;
-  border-width: 1px;
-}
-
-.texto02 {
-  text-align: justify;
-  width: 320;
-}
-
-.menu2agenda {
-  width: 50px;
-  height: 30px;
-  text-align: center;
-  padding: 15px 30px 15px 30px;
-  box-shadow: 3px 3px 3px #888888;
-  border-radius: 0.25em;
-  text-shadow: 0px 0px 0px #222222;
-  color: #000000;
-  background-color: #b6d3a8;
   cursor: pointer;
 }
 
@@ -441,50 +210,6 @@
   overflow-y: scroll;
 }
 
-.boxvideo {
-  width: 300px;
-  height: 200px;
-  background-color: #666;
-  border-radius: 20px;
-}
-
-.inmplayer-buttonred {
-  width: auto;
-  overflow: hidden;
-  padding: 5px 30px 5px 30px;
-  box-shadow: 3px 3px 3px #888888;
-  border-radius: 0.25em;
-  text-shadow: 0px 0px 0px #222222;
-  background-color: #ff4040 !important;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.inmplayer-buttonwhite {
-  width: auto;
-  overflow: hidden;
-  padding: 5px 20px 5px 20px;
-  box-shadow: 0px 0px 1px #888888;
-  border-radius: 0.25em;
-  font-family: Roboto;
-  text-shadow: 0px 0px 0px #222222;
-  background-color: #ffffff !important;
-  color: #000000;
-  cursor: pointer;
-}
-
-.inmplayer-buttonblack {
-  width: auto;
-  overflow: hidden;
-  padding: 5px 20px 5px 20px;
-  box-shadow: 0px 0px 1px #888888;
-  border-radius: 0.25em;
-  font-family: Roboto;
-  text-shadow: 0px 0px 0px #222222;
-  background-color: #000000 !important;
-  color: #ffffff;
-  cursor: pointer;
-}
 
 /* Exact club */
 
@@ -765,32 +490,6 @@
 
 .div-spotter h5 {
   font-size: 16px;
-}
-
-/* EXPANSÃO */
-
-.button-expansao {
-  background-color: #fe3d01;
-  border-radius: 10px;
-  color: #ffffff;
-  font-weight: 900;
-  letter-spacing: 2px;
-  margin-top: 8px;
-  padding: 8px 0px;
-  text-align: center;
-  text-transform: uppercase;
-  width: 100%;
-  transition: all 0.3s;
-  cursor: pointer;
-}
-
-.button-expansao:hover {
-  background-color: #da4e24;
-}
-
-.button-expansao a {
-  text-decoration: none;
-  color: #fff;
 }
 
 /*  POST NEWS */
@@ -1191,7 +890,7 @@ li.exactClub-calendario.workshop .buttonExactClub {
 }
 
 .novidades-menu {
-  max-height: 97vh;
+  max-height: 83vh;
   overflow-y: auto;
 }
 
