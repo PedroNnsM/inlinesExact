@@ -1,0 +1,22 @@
+<div style="background-color:#28323c; padding-bottom:5px; padding-top:10px">
+  <div style="background-color:#28323c; width:150px"><!-- Logo Academia -->
+  <div style="text-align:center"><img align="center" alt="" height="86" src="https://i.ibb.co/449sZ65/Logo-Academia-White.png" width="250" /></div>
+  </div>
+  </div>
+  <!-- Vídeo/GIF/Imagem -->
+  
+  <div style="align-items:center; background-color:#28323c; color:#ffffff; display:flex; justify-content:center; padding:0 16px 16px">
+  <div style="text-align:center"><img alt="Banco de Talentos GIF" height="360" src="https://i.ibb.co/QrPDqNr/Banco-de-Talentos.gif" style="-moz-border-radius:5px; -webkit-border-radius:5px; border-radius:10px; border:1px solid #28323c; margin-left:16px" width="640" /></div>
+  
+  <div style="align-items:center; display:flex; flex-direction:column; flex:5; padding:16px; width:30%"><!-- Titulo do evento-->
+  <div style="display:flex; flex-direction:column; gap:16px; padding-left:8px; text-align:center; width:100%">
+  <h4 style="text-align:center"><strong>Banco de Talentos no Spotter!</strong></h4>
+  <!-- Chamada para o evento-->
+  
+  <p style="margin-right:10px; text-align:justify">O Banco de Talentos Certificados da Academia Exact est&aacute; de cara nova! Agora voc&ecirc; pode acess&aacute;-lo diretamente no Exact Spotter.<br />
+  <br />
+  Atrav&eacute;s do Banco de Talentos, voc&ecirc; pode acessar informa&ccedil;&otilde;es de alunos certificados pela Academia Exact, filtrar por aqueles que possuem o perfil ideal para sua opera&ccedil;&atilde;o, visualizar o LinkedIn do aluno e ofertar sua vaga.</p>
+  <!-- Botão para o evento --><a class="buttonExactClub modal" href="https://app.exactspotter.com/spotter/banco-talentos" style="width: 60%; text-align: center; margin: 0 auto;" target="_blank">Acesse e confira </a></div>
+  </div>
+  </div>
+  
