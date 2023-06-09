@@ -24,8 +24,6 @@
   border-radius: 8px;
 }
 
-
-
 .inmplayer-popover-close-button {
   font-size: x-large;
   font-weight: 300;
@@ -59,7 +57,6 @@
   height: 11px !important;
   border-radius: 0.25em;
 }
-
 
 .inmplayer-popover-button-end {
   float: right;
@@ -165,8 +162,6 @@
   text-align: right;
 }
 
-
-
 /*---------------------- MENU LATERAL----------------------------*/
 
 /* menu lateral Início */
@@ -209,7 +204,6 @@
   height: 100px;
   overflow-y: scroll;
 }
-
 
 /* Exact club */
 
@@ -764,6 +758,13 @@ li.exactClub-calendario.workshop .buttonExactClub {
   transform: translate(50%, 0) scale(1.2);
 }
 
+.buttonExactClub.academia {
+  --button_radius: 0.75em;
+  --button_color: #f9a83e;
+  --button_outline_color: #f9a83e;
+  --button-text: #fff;
+}
+
 /*----------------------teste de launcher-------------------------*/
 
 .inmplayer-launcher.inmplayer-launcher-text {
@@ -947,5 +948,9 @@ li.exactClub-calendario.workshop .buttonExactClub {
 
 .novidades-menu a:hover {
   text-decoration: underline;
+}
 
+
+input::placeholder{
+  color:purple
 }
