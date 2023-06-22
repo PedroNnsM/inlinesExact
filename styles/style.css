@@ -32,11 +32,6 @@
   animation-fill-mode: both;
 }
 
-.templateExactClub {
-  background-color: #0c646c;
-  border: none;
-}
-
 .inmplayer-popover-wrapper {
   border-radius: 8px;
 }
@@ -77,10 +72,9 @@
 
 .inmplayer-popover-button-end {
   float: right;
- 
+
   border-radius: 0px;
 }
-
 
 .inmplayer-popover-button-next::after {
   content: "";
@@ -97,7 +91,7 @@
 }
 .inmplayer-popover-button-next {
   float: right;
- 
+
   border-radius: 0px;
 }
 
@@ -236,13 +230,6 @@
   color: #fff;
 }
 
-.div-logo-exactclub {
-  align-items: center;
-  background-color: #0d646b;
-  display: flex;
-  justify-content: center;
-  padding: 12px 0;
-}
 .centralizar-botoes-exactclube {
   display: flex;
   gap: 5px;
@@ -702,10 +689,6 @@ li.exactClub-calendario.workshop .buttonExactClub {
 }
 
 .buttonExactClub {
-  --button_radius: 0.75em;
-  --button_color: #333;
-  --button_outline_color: #f9a83e;
-  --button-text: #fff;
   position: relative;
   margin-top: 8px;
   padding: 0.5em 0.8em;
@@ -974,9 +957,115 @@ li.exactClub-calendario.workshop .buttonExactClub {
 .novidades-menu a:hover {
   text-decoration: underline;
 }
+/* TEMPLATE CLUB  */
+
+.templateExactClub {
+  --button_color: #042a2d;
+  --button_outline_color: #fcb663;
+  --button-text: #fff;
+  --primary-color: #0c646c;
+  --bg-img: #82b0b4;
+  background-color: var(--primary-color);
+  border: none;
+  font-family: "encode sans", sans-serif;
+}
 
 .templateExactClub .inmplayer-popover-button-end {
-  background-color: #fcb663;
+  background-color: var(--button_outline_color);
   border-radius: 8px;
   content: "Finalizar";
+}
+
+.div-logo-exactclub {
+  align-items: center;
+  background-color: #0d646b;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--button_color);
+}
+
+.card-club {
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--button-text);
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--button_color);
+  padding: 8px 0;
+}
+
+.div-palestrante {
+  height: 305px;
+  width: 275px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.img-palestrante {
+  background-color: var(--bg-img);
+  border-radius: 50%;
+  display: flex;
+  height: 250px;
+  margin-bottom: -60;
+  position: relative;
+  width: 240px;
+  z-index: 1;
+}
+.img-palestrante > img {
+  position: absolute;
+  bottom: 59px;
+  width: 100%;
+}
+.role-description {
+  padding-top: 8px;
+  background-color: var(--button_outline_color);
+  width: 90%;
+  z-index: 2;
+  border-radius: 8px;
+  text-align: center;
+  color: var(--button_color);
+}
+
+.textos-do-club {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8px;
+  padding-right: 16px;
+  width: 300px;
+}
+
+.templateExactClub h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.buttonExactClubInline  {
+  padding: 0.5em 0.8em;
+  outline: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--button_color);
+  border-radius: 8px;
+  color: var(--button-text);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.buttonExactClubInline:hover {
+  opacity: 0.8;
+}
+
+.club-online {
+  animation: blink 1s infinite;
+  background-color: red;
+  border-radius: 50%;
+  height: 12px;
+  margin-right: 6px;
+  width: 12px;
 }
