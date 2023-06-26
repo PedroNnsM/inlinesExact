@@ -862,32 +862,18 @@ li.academia .header-post-news p::after {
 .div-palestrante {
   height: 305px;
   width: 275px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
 }
 
 .img-palestrante {
-  background-color: var(--bg-img);
-  border-radius: 50%;
-  display: flex;
+  background-image: url(https://i.ibb.co/Gv5zXwD/imagem.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
   height: 250px;
-  margin-bottom: -60;
-  position: relative;
-  width: 240px;
-  z-index: 1;
-}
-.img-palestrante > img {
-  position: absolute;
-  bottom: 59px;
-  width: 100%;
 }
 .role-description {
   padding-top: 8px;
   background-color: var(--button_outline_color);
   width: 100%;
-  z-index: 2;
   border-radius: 8px;
   text-align: center;
   color: var(--button_color);
@@ -947,8 +933,6 @@ li.academia .header-post-news p::after {
 .agenda-exactClub-content {
   height: 100vh;
   overflow: auto;
-  padding-right: 12px;
-  position: absolute;
   width: 96%;
 }
 .agenda-exactClub .div-palestrante {
@@ -963,11 +947,7 @@ li.academia .header-post-news p::after {
   background-color: var(--bg-img);
   border-radius: 50%;
   display: flex;
-  margin-bottom: -60;
-  position: relative;
   width: 100%;
-  height: 64%;
-  z-index: 1;
 }
 
 .image-exactClub-calendario > .img + p {
