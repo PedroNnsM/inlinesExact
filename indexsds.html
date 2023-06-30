@@ -1,108 +1,60 @@
+<!DOCTYPE html>
 <style>
-  * {
+  body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: none;
-    list-style: none;
-    font-family: sans-serif;
-    background-color: #1c1c1c;
+    background-color: orange; /* Define a cor de fundo laranja */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
   }
-  .carousel {
-  position: relative;
-  width: 400px;
-  height: 300px;
-  overflow: hidden;
-  font-weight: 500;
-}
 
-
-.slides {
-  display: flex;
-  width: 300%;
-  height: 100%;
-  animation: carousel-animation 5s linear infinite;
-}
-
-.slide {
-  flex: 1;
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.navigation {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-}
-
-.navigation label {
-  width: 10px;
-  height: 10px;
-  background-color: #ccc;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-input[type="radio"] {
-  position: absolute;
-  visibility: hidden;
-}
-
-input[type="radio"]:checked + .slides {
-  animation-play-state: paused;
-}
-
-input[type="radio"]:checked + .slides + .navigation label {
-  background-color: #555;
-}
-
-@keyframes carousel-animation {
-  0% {
-    transform: translateX(0);
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    background-color: black;
   }
-  33.33% {
-    transform: translateX(-100%);
+
+  .content {
+    padding: 20px;
   }
-  66.66% {
-    transform: translateX(-200%);
+
+  .content h1,
+  .content p {
+    color: white;
   }
-  100% {
-    transform: translateX(0);
+
+  .diagonal {
+    position: relative;
+    overflow: hidden;
+    transform: skew(-20deg);
+    background-color: black;
+
+    width: 200px;
   }
-}
+
+  .diagonal:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1000px;
+    height: 200%;
+    background-color: white; /* Define a cor da lateral direita */
+    transform-origin: top right;
+    transform: skew(20deg);
+  }
 </style>
-
-<body>
-  <div class="carousel">
-    <input type="radio" name="slide" id="slide1" checked>
-    <input type="radio" name="slide" id="slide2">
-    <input type="radio" name="slide" id="slide3">
-    
-    <div class="slides">
-      <div class="slide">
-        <img src="imagem1.jpg" alt="Imagem 1">
-      </div>
-      <div class="slide">
-        <img src="imagem2.jpg" alt="Imagem 2">
-      </div>
-      <div class="slide">
-        <img src="imagem3.jpg" alt="Imagem 3">
+<html>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1>Meu Site</h1>
+        <p>Bem-vindo ao meu site!</p>
       </div>
     </div>
-    
-    <div class="navigation">
-      <label for="slide1"></label>
-      <label for="slide2"></label>
-      <label for="slide3"></label>
-    </div>
-  </div>
-</body>
+  </body>
+</html>

@@ -816,7 +816,7 @@ li.academia .header-post-news p::after {
   --button-text: #fff;
   --primary-color: #0c646c;
   --bg-img: #82b0b4;
-
+  font-family: "Poppins", sans-serif;
   color: var(--button-text);
   background-color: var(--primary-color);
   border: none;
@@ -847,12 +847,10 @@ li.academia .header-post-news p::after {
 }
 
 .div-palestrante {
-  height: 305px;
-  width: 275px;
+  width: 43%;
 }
 
 .img-palestrante {
-  background-image: url(https://i.ibb.co/Gv5zXwD/imagem.png);
   background-position: bottom;
   background-repeat: no-repeat;
   height: 250px;
@@ -866,12 +864,12 @@ li.academia .header-post-news p::after {
   color: var(--button_color);
 }
 .role-description p {
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 700;
 }
-.role-description span{
+.role-description span {
   display: block;
-  font-size: 12px;
+  font-size: 8px;
 }
 
 .textos-do-club {
@@ -924,26 +922,28 @@ li.academia .header-post-news p::after {
   --primary-color: #0c646c;
   --bg-img: #82b0b4;
   --bg-sidebar: #0b5459;
+  font-family: Poppins, sans-serif;
   background-color: var(--bg-sidebar);
   color: var(--button-text);
 }
 .agenda-exactClub-content {
   height: 100vh;
   overflow: auto;
-  width: 96%;
+  width: 100%;
 }
-.agenda-exactClub .div-palestrante {
-  width: 45%;
- 
+.agenda-exactClub .img-palestrante {
+  width: 100%;
+}
+.agenda-exactClub p {
+  margin: 0;
 }
 
 .agenda-exactClub .img-palestrante > img {
   background-image: url(https://i.ibb.co/Gv5zXwD/imagem.png);
   background-position: bottom;
   background-repeat: no-repeat;
-}
-.agenda-exactClub .img-palestrante {
   width: 100%;
+  background-size: contain;
 }
 
 .image-exactClub-calendario > .img + p {
@@ -981,7 +981,7 @@ li.academia .header-post-news p::after {
 ul.post-news,
 ul.exactClub-calendario {
   list-style: none;
-  padding: 0;
+  padding: 4px;
   margin: 0;
 }
 
@@ -1007,23 +1007,56 @@ ul.exactClub-calendario {
   display: flex;
   width: 100%;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
+  margin-bottom: 8px;
+  text-align: center;
+  
 }
 
 .header-exactClub-calendario h3 {
   color: var(--button_outline_color);
   font-size: 24px;
   font-weight: 800;
+  margin-top: 0;
+  text-transform: uppercase;
 }
+.header-exactClub-calendario > p {
+  font-size: 12px;
+  margin: 0;
+  font-weight: 800;
+  line-height: 101%;
+  text-transform: uppercase;
+}
+
 .card-calendar-club {
-  margin-left: 16px;
+  margin-left: 8px;
+  padding-left: 8px;
+  border-left: 1px solid var(--button_color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   width: 55%;
 }
 
+.card-calendar-club-description {
+  text-align: justify;
+  font-size: 12px;
+  font-weight: 100;
+  line-height: normal;
+}
+.data-calendario-club {
+  width: 183.99px;
+  padding: 4px 0;
+  background-image: url(https://i.ibb.co/nntw6CJ/Rectangle-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: var(--button_color);
+  font-weight: 800;
+}
 .button-card-calendar {
   position: relative;
   padding: 0.5em 0.8em;
@@ -1036,29 +1069,24 @@ ul.exactClub-calendario {
   border-radius: 8px;
   color: var(--button-text);
   z-index: 0;
-  font-weight: bold;
+  font-weight: 700;
   width: 100%;
   overflow: hidden;
+  font-size: 10px;
+  font-family: Encode Sans, sans-serif;
 }
-.header-post-news span,
-.header-exactClub-calendario span {
+.header-post-news span {
   font-weight: bold;
   font-size: large;
   padding: 8px 0px;
 }
-.header-exactClub-calendario h3 {
-  margin: 0 0 8px 0;
-}
 
 li .header-post-news p,
-li .header-post-news p::after,
-li .header-exactClub-calendario p,
-li .header-exactClub-calendario p::after {
+li .header-post-news p::after {
   font-size: 10px;
 }
 
-li .header-post-news p::after,
-li .header-exactClub-calendario p::after {
+li .header-post-news p::after {
   padding: 4px 8px;
   border-radius: 8px;
   margin-left: 16px;
