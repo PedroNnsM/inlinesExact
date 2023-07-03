@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;0,900;1,100&display=swap');
-@-webkit-keyframes fadeIn {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;0,900;1,100&display=swap");
+@keyframes fadeIn {
   from {
     opacity: 0;
   }
@@ -823,6 +823,7 @@ li.academia .header-post-news p::after {
   border: none;
 }
 
+.agenda-exactClub .inmplayer-popover-button-end,
 .templateExactClub .inmplayer-popover-button-end {
   background-color: var(--button_outline_color);
   border-radius: 8px;
@@ -916,7 +917,8 @@ li.academia .header-post-news p::after {
 }
 /* Agenda club  */
 
-.agenda-exactClub {
+.agenda-exactClub,
+.templateExactClub {
   --button_color: #042a2d;
   --button_outline_color: #fcb663;
   --button-text: #fff;
@@ -926,20 +928,28 @@ li.academia .header-post-news p::after {
   font-family: Poppins, sans-serif;
   background-color: var(--bg-sidebar);
   color: var(--button-text);
+  border: none;
 }
+.agenda-exactClub .inmplayer-popover-content {
+  padding: 8px 0 0 8px;
+}
+
 .agenda-exactClub-content {
   height: 100vh;
   overflow: auto;
   width: 100%;
 }
-.agenda-exactClub .img-palestrante {
+.agenda-exactClub .img-palestrante,
+.templateExactClub .img-palestrante {
   width: 100%;
 }
-.agenda-exactClub p {
+.agenda-exactClub p,
+.templateExactClub p {
   margin: 0;
 }
 
-.agenda-exactClub .img-palestrante > img {
+.agenda-exactClub .img-palestrante > img,
+.templateExactClub .img-palestrante > img {
   background-image: url(https://i.ibb.co/Gv5zXwD/imagem.png);
   background-position: bottom;
   background-repeat: no-repeat;
@@ -1000,7 +1010,8 @@ ul.exactClub-calendario {
   background-color: var(--primary-color);
 }
 
-.agenda-exactClub .botao-card-agenda {
+.agenda-exactClub .botao-card-agenda,
+  .templateExactClub .botao-card-agenda {
   background-color: var(--button_color);
 }
 .header-post-news,
@@ -1012,7 +1023,6 @@ ul.exactClub-calendario {
   flex-direction: column;
   margin-bottom: 8px;
   text-align: center;
-  
 }
 
 .header-exactClub-calendario h3 {
