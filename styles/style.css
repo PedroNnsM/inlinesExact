@@ -824,10 +824,14 @@ li.academia .header-post-news p::after {
 }
 
 .agenda-exactClub .inmplayer-popover-button-end,
-.templateExactClub .inmplayer-popover-button-end {
+.agenda-exactClub .inmplayer-popover-button-next,
+.agenda-exactClub .inmplayer-popover-button-previous,
+.templateExactClub .inmplayer-popover-button-end,
+.templateExactClub .inmplayer-popover-button-next,
+.templateExactClub .inmplayer-popover-button-previous {
   background-color: var(--button_outline_color);
   border-radius: 8px;
-  content: "Finalizar";
+  margin-left: 8px;
 }
 
 .div-logo-exactclub {
@@ -932,7 +936,7 @@ li.academia .header-post-news p::after {
   border: none;
 }
 .agenda-exactClub .inmplayer-popover-buttons {
-  padding-top: 2em
+  padding-top: 2em;
 }
 .agenda-exactClub .inmplayer-popover-content {
   padding: 8px 0 0 8px;
@@ -1070,6 +1074,9 @@ ul.exactClub-calendario {
   font-size: 12px;
   font-weight: 100;
   line-height: normal;
+}
+.templateExactClub .card-calendar-club {
+  margin-top: 0;
 }
 .data-calendario-club {
   width: 183.99px;
