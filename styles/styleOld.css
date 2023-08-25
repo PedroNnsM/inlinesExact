@@ -1040,7 +1040,11 @@ ul.exactClub-calendario {
   line-height: 101%;
   text-transform: uppercase;
 }
-
+div{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .card-calendar-club {
   margin-left: 8px;
   padding-left: 8px;
