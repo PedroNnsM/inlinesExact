@@ -809,6 +809,25 @@ li.academia .header-post-news p::after {
 .novidades-menu a:hover {
   text-decoration: underline;
 }
+
+/* TEMPLATE CAMPANHAS  */
+
+.templateCampanhas {
+  --button_color: #ef8059;
+  --button_outline_color: #fcb663;
+  --button-text: #fff;
+  --primary-color: #394554;
+  --bg-img: #82b0b4;
+  font-family: "Poppins", sans-serif;
+  color: var(--button-text);
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.templateCampanhas a:hover {
+  background-color: #f85218;
+}
+
 /* TEMPLATE CLUB  */
 
 .templateExactClub {
@@ -832,7 +851,7 @@ li.academia .header-post-news p::after {
   background-color: var(--button_outline_color);
   color: var(--button_color);
   font-weight: 600;
-  
+
   border-radius: 8px;
   margin-left: 8px;
 }
@@ -1112,6 +1131,11 @@ ul.exactClub-calendario {
   font-size: 10px;
   font-family: Encode Sans, sans-serif;
 }
+
+.button-card-calendar:hover {
+  background-color: #042a2dbf;
+}
+
 .header-post-news span {
   font-weight: bold;
   font-size: large;
