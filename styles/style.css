@@ -827,6 +827,9 @@ li.academia .header-post-news p::after {
 .templateCampanhas a:hover {
   background-color: #f85218;
 }
+.templateCampanhas .ul-sem-bg a:hover {
+  background: none
+}
 
 /* TEMPLATE CLUB  */
 
