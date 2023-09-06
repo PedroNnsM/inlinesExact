@@ -813,26 +813,34 @@ li.academia .header-post-news p::after {
 /* TEMPLATE CAMPANHAS  */
 
 .templateCampanhas {
-  --button_color: #ef8059;
+    --button_color: #EF8059;
+    --button_outline_color: #fcb663;
+    --button-text: #fff;
+    --primary-color: #394554;
+    --bg-img: #82b0b4;
+    font-family: "Poppins", sans-serif;
+    color: var(--button-text);
+    background-color: var(--primary-color);
+    border: none;
+  }
+
+  .templateCampanhas a:hover{
+    background-color:#F85218;
+   }
+
+/* TEMPLATE CLUB  */
+
+.templateExactClub {
+  --button_color: #042a2d;
   --button_outline_color: #fcb663;
   --button-text: #fff;
-  --primary-color: #394554;
+  --primary-color: #0c646c;
   --bg-img: #82b0b4;
   font-family: "Poppins", sans-serif;
   color: var(--button-text);
   background-color: var(--primary-color);
   border: none;
 }
-
-.templateCampanhas a:hover {
-  background-color: #f85218;
-}
-.templateCampanhas .ul-sem-bg a:hover {
-  background: none
-}
-
-/* TEMPLATE CLUB  */
-
 .templateExactClub {
   --button_color: #042a2d;
   --button_outline_color: #fcb663;
@@ -854,7 +862,7 @@ li.academia .header-post-news p::after {
   background-color: var(--button_outline_color);
   color: var(--button_color);
   font-weight: 600;
-
+  
   border-radius: 8px;
   margin-left: 8px;
 }
@@ -914,7 +922,8 @@ li.academia .header-post-news p::after {
   width: 300px;
 }
 
-.templateExactClub h5 {
+.templateExactClub h5,
+.exactClub-calendario-exclusivo h5 {
   font-size: 20px;
   font-weight: bold;
 }
@@ -1052,6 +1061,19 @@ ul.exactClub-calendario {
   background-color: var(--primary-color);
 }
 
+.exactClub-calendario-exclusivo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px var(--button_color);
+  margin-top: 16px;
+  background-color:#ffcc33;
+}
+
 .agenda-exactClub .botao-card-agenda,
 .templateExactClub .botao-card-agenda {
   background-color: var(--button_color);
@@ -1097,7 +1119,7 @@ ul.exactClub-calendario {
 .card-calendar-club-description {
   text-align: justify;
   font-size: 12px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: normal;
 }
 .templateExactClub .card-calendar-club {
@@ -1135,8 +1157,8 @@ ul.exactClub-calendario {
   font-family: Encode Sans, sans-serif;
 }
 
-.button-card-calendar:hover {
-  background-color: #042a2dbf;
+.button-card-calendar:hover{
+background-color: #042a2dbf;
 }
 
 .header-post-news span {
